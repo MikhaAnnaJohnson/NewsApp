@@ -27,7 +27,7 @@ and displaying them in a user-friendly UI using Jetpack Compose, Hilt for depend
 
 ### Steps to Run the App
 1. Clone this repository:    
- git clone https://github.com/M/news-app.git
+ git clone https://github.com/MikhaAnnaJohnson/NewsApp
 
 
 2.# Architecture Overview
