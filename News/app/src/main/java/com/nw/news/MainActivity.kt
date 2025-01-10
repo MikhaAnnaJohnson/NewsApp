@@ -49,7 +49,6 @@ import androidx.navigation.navArgument
 import com.nw.news.data.local.entity.ArticleEntity
 import dagger.hilt.android.AndroidEntryPoint
 
-// MainActivity
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 

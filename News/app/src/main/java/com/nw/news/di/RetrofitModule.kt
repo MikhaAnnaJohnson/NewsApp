@@ -1,5 +1,6 @@
 package com.nw.news.di
 
+import com.nw.news.BuildConfig
 import com.nw.news.data.api.NewsApiService
 import com.nw.news.data.api.RetrofitClient
 import com.nw.news.data.local.dao.ArticleDao
@@ -15,12 +16,11 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class RetrofitModule {
-    private val BASE_URL = "https://newsapi.org/v2/"
 
     @Provides
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(BuildConfig.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

@@ -22,12 +22,19 @@ android {
 
         //return empty key in case something goes wrong
         val apiKey = properties.getProperty("NEWS_API_KEY") ?: ""
+        val baseUrl = properties.getProperty("BASE_URL") ?: ""
 
         buildConfigField(
             type = "String",
             name = "API_KEY",
             value = apiKey
         )
+        buildConfigField(
+            type = "String",
+            name = "BASE_URL",
+            value = baseUrl
+        )
+
 
         applicationId = "com.nw.news"
         minSdk = 28

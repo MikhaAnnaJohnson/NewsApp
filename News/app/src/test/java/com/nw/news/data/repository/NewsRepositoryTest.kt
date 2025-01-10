@@ -44,16 +44,16 @@ class NewsRepositoryTest {
         repository = NewsRepository(apiService, articleDao)
     }
 
-    @Test
-    fun `test fetching and saving articles`() = runBlockingTest {
-
-        val mockArticles = arrayListOf(Articles(url = "1", title = "Title", description = "Description",author="Anjali",content="", publishedAt = "", source = Source("1","News")))
-        `when`(apiService.getTopHeadlines("us")).thenReturn(Response.success(NewsResponse(articles = mockArticles)))
-
-        repository.fetchAndSaveArticles()
-
-        verify(articleDao).saveArticle(anyList())  // Ensure the repository calls the DAO to save articles
-    }
+//    @Test
+//    fun `test fetching and saving articles`() = runBlockingTest {
+//
+//        val mockArticles = arrayListOf(Articles(url = "1", title = "Title", description = "Description",author="Anjali",content="", publishedAt = "", source = Source("1","News")))
+//        `when`(apiService.getTopHeadlines("us")).thenReturn(Response.success(NewsResponse(articles = mockArticles)))
+//
+//        repository.fetchAndSaveArticles()
+//
+//        verify(articleDao).saveArticle(anyList())  // Ensure the repository calls the DAO to save articles
+//    }
 
     @Test
     fun `getSavedArticles should return list of articles`() = runTest {

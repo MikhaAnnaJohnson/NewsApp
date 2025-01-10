@@ -12,6 +12,10 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/**
+ * ViewModel for managing the news articles in the UI.
+ * Fetches data from the repository and exposes it to the UI.
+ */
 @HiltViewModel
 class NewsViewModel @Inject constructor(
     private val repository: NewsRepository
