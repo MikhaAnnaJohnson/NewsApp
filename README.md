@@ -25,9 +25,9 @@ and displaying them in a user-friendly UI using Jetpack Compose, Hilt for depend
 - Gradle 7.0 or higher.
 
 ### Steps to Run the App
-1. Clone this repository:
-   
-   git clone https://github.com/M/news-app.git
+1. Clone this repository:    
+ git clone https://github.com/M/news-app.git
+
 
 2.# Architecture Overview
 
