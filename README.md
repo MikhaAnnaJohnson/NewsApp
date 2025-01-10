@@ -1,4 +1,5 @@
 # News App
+![News](https://github.com/user-attachments/assets/8662606a-1bf4-4d86-84f4-bc8391750959)
 
 A modern Android application to read and view news articles with functionalities like fetching data from an API, saving articles locally, 
 and displaying them in a user-friendly UI using Jetpack Compose, Hilt for dependency injection, Retrofit for networking, and Room for local database storage.
@@ -30,7 +31,6 @@ and displaying them in a user-friendly UI using Jetpack Compose, Hilt for depend
 
 
 2.# Architecture Overview
-
 The News App follows a **MVVM** (Model-View-ViewModel) architecture to separate concerns and improve testability and scalability.
 
 ### Components
