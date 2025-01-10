@@ -5,6 +5,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.parcelize")
     id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 
@@ -106,8 +107,8 @@ dependencies {
     implementation("com.google.android.material:material:1.12.0-alpha03")
 
     // Room
-//    implementation("androidx.room:room-ktx:\$roomVersion")
-//    kapt("androidx.room:room-compiler:\$roomVersion")
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
 
     // OkHttp
     implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.0"))
@@ -132,6 +133,13 @@ dependencies {
     annotationProcessor("com.github.bumptech.glide:compiler:4.13.2")
 
 
+  //Dagger hilt
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+
+
+
+   
 
 
 
@@ -145,4 +153,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    testImplementation("junit:junit:4.12")
+    testImplementation("org.mockito:mockito-core:2.19.0")
 }
